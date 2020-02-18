@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Pinger.Intefaces
 {
-    interface IPing
+   public interface IPing
     {
-        void Ping(int a, int b, int c, int d);
+        void Ping(int a, int b, int c, int d); //Должен возвращать объект который будет вноситься в лист
+        
     }
 }
