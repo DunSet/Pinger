@@ -43,7 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entitys\Ip.cs" />
     <Compile Include="Intefaces\IPing.cs" />
+    <Compile Include="Logic\ObjectListPusher.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="PingOptions\PingPool.cs" />
     <Compile Include="PingOptions\PingSolo.cs" />
     <Compile Include="Program.cs" />
