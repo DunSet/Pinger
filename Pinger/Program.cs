@@ -9,8 +9,11 @@ namespace Pinger
 {
     class Program
     {
+     
         static void Main(string[] args)
         {
+        
+
             int a, b, c, d; a = 192; b = 168; c = 8; d = 0;
 
             PingPool one = new PingPool();
@@ -35,7 +38,10 @@ namespace Pinger
             }
             //  PingReply tst = ping33.Send($"192.168.155.234");
             //  Console.WriteLine(ping33.);
+
+        
             Console.ReadLine();
+
 
         }
     }
