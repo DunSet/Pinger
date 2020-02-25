@@ -15,5 +15,10 @@ namespace Pinger
         {
            
         }
+
+        public void Dispose()
+        {
+            throw new Exception();
+        }
     }
 }

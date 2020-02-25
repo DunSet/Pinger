@@ -25,9 +25,9 @@ namespace Pinger
 
             List<PingReply> ipList = new List<PingReply>();
             
-            Console.WriteLine("Buff " +oneping.Buffer);
-            Console.WriteLine("Trip time miliseconds "+oneping.RoundtripTime);
-            Console.WriteLine("TTL " +oneping.Options.Ttl);
+            Console.WriteLine("Buff " + oneping.Buffer);
+            Console.WriteLine("Trip time miliseconds " + oneping.RoundtripTime);
+            Console.WriteLine("TTL " + oneping.Options.Ttl);
             Console.WriteLine("Address " + oneping.Address);
 
             ipList.Add(oneping);
@@ -35,6 +35,7 @@ namespace Pinger
             foreach (var item in ipList)
             {
                 Console.WriteLine(item.Address);
+                Console.WriteLine(item.RoundtripTime);
             }
             //  PingReply tst = ping33.Send($"192.168.155.234");
             //  Console.WriteLine(ping33.);
