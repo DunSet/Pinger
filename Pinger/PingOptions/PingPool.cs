@@ -14,7 +14,7 @@ namespace Pinger
         System.Net.NetworkInformation.Ping ping = new System.Net.NetworkInformation.Ping(); //Почему нельзя убрать? "System.Net.NetworkInformation"
 
         int ipCounter = 0;
-         void IPing.Ping(int a, int b, int c, int d)
+        void IPing.Ping(int a, int b, int c, int d)
         {
             for (; c < 255; c++)
             {
@@ -23,7 +23,7 @@ namespace Pinger
                 for (; d < 255; d++)
                 {
 
-                   PingReply pingReply = ping.Send($"{a}.{b}.{c}.{d}");
+                    PingReply pingReply = ping.Send($"{a}.{b}.{c}.{d}");
 
                     if (pingReply.Status == IPStatus.Success)
                     {
@@ -44,6 +44,10 @@ namespace Pinger
                     }
                 }
             }
+        }
+        public void Dispose()
+        {
+            throw new Exception();
         }
     }
 }

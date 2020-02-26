@@ -43,12 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entitys\Ip.cs" />
-    <Compile Include="Entitys\UserContext.cs" />
+    <Compile Include="InputManager.cs" />
     <Compile Include="Intefaces\IPing.cs" />
-    <Compile Include="Logic\ObjectListPusher.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="PingOptions\PingPool.cs" />
     <Compile Include="PingOptions\PingSolo.cs" />
     <Compile Include="Program.cs" />
@@ -64,6 +60,10 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational">
       <Version>3.1.1</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entitys\" />
+    <Folder Include="Logic\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
